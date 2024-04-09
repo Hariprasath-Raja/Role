@@ -1,0 +1,13 @@
+<div class="main">
+    <p-card header="Login" subheader="Welcome!!!" [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+        </ng-template>
+        
+            <div class="inputs">
+                <input pInputText type="text" placeholder="User Name"/>
+                <input pInputText type="text" placeholder="Password"/>
+            </div>
+            <button pButton pRipple label="Submit" (click)="login()" class="p-button-success"></button>
+    </p-card>
+</div>

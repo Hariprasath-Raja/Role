@@ -1,0 +1,18 @@
+.main
+{
+    background-color:rgb(218, 23, 208);
+    height: 100vh;
+    width:100%;
+    background-image: linear-gradient(to right, rgb(187, 126, 184) , rgb(223, 34, 166));
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.p-card-content{
+     padding: 0; 
+}
+.inputs input
+{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="form">
+        <div class="card">
+            <p-card >
+                <h2>Role Info</h2>
+                <form>
+                    <div class="p-field">
+                        <label for="FirstName">Role Code:</label>
+                        <input id="username" type="text" pInputText  name="username" required>
+                    </div>
+                    <div class="p-field">
+                        <label for="LastName">Role Description:</label>
+                        <input id="username" type="text" pInputText  name="username" required>
+                    </div>
+                    <div class="p-field">
+                        <label for="email">Created by:</label>
+                        <input id="email" type="email" pInputText  name="email" required>
+                    </div>
+                    <div class="p-field">
+                        <label for="password">Modified by:</label>
+                        <input id="password" type="password" pInputText   name="password" required>
+                    </div>
+                    <div class="p-field">
+                        <button pButton type="submit" label="Submit"></button>
+                    </div>
+                </form>
+            </p-card>   
+        </div>
+    </div>
+    <div class="table">
+        <p-table  [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Role Code</th>
+                    <th>Description</th>
+                    <th>Created by</th>
+                    <th>Modified by</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>{{ product.code }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>{{ product.quantity }}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
